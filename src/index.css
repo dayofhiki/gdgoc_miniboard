@@ -53,3 +53,7 @@ a { color: inherit; text-decoration: none; }
   .detail-card { padding: 26px; }
   .detail-card h1 { font-size: 25px; }
 }
+
+.comment { padding: 16px 0; border-top: 1px solid #eceef2; }
+.comment strong { font-size: 13px; color: #4c5663; }
+.comment p { margin: 8px 0 0; color: #687385; line-height: 1.7; font-size: 14px; }

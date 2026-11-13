@@ -4,8 +4,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link className="logo" to="/">mini<span>board.</span></Link>
-        <span className="header-label">React practice</span>
+        <Link className="logo" to="/">MiniBoard</Link>
       </div>
     </header>
   )

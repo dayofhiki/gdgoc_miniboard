@@ -19,4 +19,7 @@ export function fetchPost(postId, signal) {
   return getJson(`/posts/${encodeURIComponent(postId)}`, signal)
 }
 
-// TODO: 댓글 조회 API 추가하기 (/posts/:id/comments)
+export async function fetchComments(postId, signal) {
+  const data = await getJson(`/posts/${encodeURIComponent(postId)}/comments`, signal)
+  return data.comments ?? []
+}

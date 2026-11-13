@@ -43,14 +43,14 @@ export default function PostDetailPage() {
       {error && <p className="notice error" role="alert">{error}</p>}
       {!loading && !error && post && (
         <article className="detail-card">
-          <span className="eyebrow">POST #{post.id}</span>
+          <span className="post-number">게시글 #{post.id}</span>
           <h1>{post.title}</h1>
           <p className="detail-body">{post.body}</p>
           <div className="tags">
             {post.tags?.map((tag) => <span className="tag" key={tag}>#{tag}</span>)}
           </div>
           <section className="comments-placeholder">
-            <h2>Comments ({comments.length})</h2>
+            <h2>댓글 ({comments.length})</h2>
             {commentsError && <p className="error" role="alert">{commentsError}</p>}
             {!commentsError && comments.length === 0 && <p>댓글이 없습니다.</p>}
             {!commentsError && comments.map((comment) => (
